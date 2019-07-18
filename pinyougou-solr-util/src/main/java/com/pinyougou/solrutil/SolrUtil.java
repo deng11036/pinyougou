@@ -22,6 +22,7 @@ public class SolrUtil {
     @Autowired
     private TbItemMapper itemMapper;
 
+
     @Autowired
     private SolrTemplate solrTemplate;
 
