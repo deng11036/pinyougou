@@ -63,7 +63,7 @@
 				</ul>
 			</div>
 
-			{{specificationItems}}
+			<#--{{specificationItems}}-->
 			<!--product-info-->
 			<div class="product-info">
 				<div class="fl preview-wrap">
