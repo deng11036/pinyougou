@@ -12,6 +12,25 @@
     <artifactId>pinyougou-page-web</artifactId>
     <packaging>war</packaging>
 
+    <properties>
+        <part>9105</part>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <part>9105</part>
+            </properties>
+        </profile>
+        <profile>
+            <id>pro</id>
+            <properties>
+                <part>9205</part>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
         <plugins>
             <plugin>
@@ -20,7 +39,7 @@
                 <version>2.2</version>
                 <configuration>
                     <!-- 指定端口 -->
-                    <port>9105</port>
+                    <port>${part}</port>
                     <!-- 请求路径 -->
                     <path>/</path>
                 </configuration>
